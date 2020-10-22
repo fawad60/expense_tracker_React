@@ -14,6 +14,7 @@ jobs:
             - name: Setup Surge
               run: npm install --global surge
             - name: Execute Deployment with Surge
-              run: surge ./ expense_tracker.surge.sh --token ${{ secrets.SURGE }}
+              run: surge ./ expense_tracker.surge.sh --token ${{ secrets.EXPENSE_TRACKER_SURGE_TOKEN
+ }}
 
 
