@@ -1,4 +1,4 @@
-name: EXPENSE_TRACKER_SURGE_TOKEN
+name: surge app Deployment
 
 on: [push]
 jobs:
