@@ -3,7 +3,7 @@ name: EXPENSE_TRACKER_SURGE_TOKEN
 on: [push]
 jobs:
         build:
-          name: job_Deploy_surge
+          name: jobs_Deploy_surge
           runs-on: ubuntu-latest
           steps:
             - uses: actions/checkout@v2
