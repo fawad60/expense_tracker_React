@@ -18,6 +18,6 @@ jobs:
             - name: Setup Surge
               run: npm install --global surge
             - name: Execute Deployment with Surge
-              run: surge ./build https://expense_tracker_60.surge.sh --token ${{secrets.SURGE_SECRET}}
+              run: surge ./build https://expense_tracker_fawad60.surge.sh --token ${{secrets.SURGE_SECRET}}
 
 
