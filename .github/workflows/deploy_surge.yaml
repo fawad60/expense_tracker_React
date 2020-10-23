@@ -11,9 +11,13 @@ jobs:
               uses: actions/setup-node@v2-beta
               with:
                 node-version: '12'
+            - name: Build React App
+              run: |
+                    npm install # Install Dependencies
+                    CI=false npm run build # CI=false to ignore warnings
             - name: Setup Surge
               run: npm install --global surge
             - name: Execute Deployment with Surge
-              run: surge ./build expense_tracker_60.surge.sh --token ${{secrets.SURGE_SECRET}}
+              run: surge ./build https://expense_tracker_60.surge.sh --token ${{secrets.SURGE_SECRET}}
 
 
